@@ -166,6 +166,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card__desc {
