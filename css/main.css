@@ -593,6 +593,10 @@
     padding: 0.3rem 0.7rem;
     font-size: 1.1rem;
   }
+
+  .main__help__wrapper {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 400px) {
