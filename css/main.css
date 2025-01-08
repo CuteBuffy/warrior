@@ -39,6 +39,13 @@
 
 .navbar__catalog__mini {
   display: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: 
+    linear-gradient(to right, #141F25, #141F25), 
+    var(--clr-gradient); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
 
 .navbar__cart {
@@ -58,9 +65,13 @@
 }
 
 .navbar__catalog__btn {
-  border-image: var(--clr-gradient) 1;
-  border-width: 2px;
-  border-style: solid;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: 
+    linear-gradient(to right, #141F25, #141F25), 
+    var(--clr-gradient); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   color: var(--clr-white);
   padding: 0.6rem 1rem;
   font-size: 1.2rem;
@@ -291,9 +302,13 @@
 }
 
 .card__buy__btn {
-  border-image: var(--clr-gradient) 1;
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: 
+    linear-gradient(to right, #141F25, #141F25), 
+    var(--clr-gradient); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -309,7 +324,7 @@
 }
 
 .container__main__help {
-  background-image: url("imgs/bg-black.png");
+  background-image: url("../imgs/bg-black.png");
   min-height: 12rem;
   max-height: 12rem;
   display: flex;
