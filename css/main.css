@@ -60,9 +60,9 @@
 .navbar__catalog__btn {
   border: 1px solid transparent;
   border-radius: 6px;
-  background: 
-    linear-gradient(to right, #141F25, #141F25), 
-    var(--clr-gradient); 
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   color: var(--clr-white);
@@ -246,9 +246,14 @@
 .hoodies__cards {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
   gap: 4rem;
   padding-bottom: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .selling__card {
@@ -256,7 +261,6 @@
   justify-content: center;
   flex-direction: column;
   min-width: 23rem;
-  max-width: 23rem;
   height: 100%;
   overflow: hidden;
   background-color: var(--clr-blackish);
@@ -298,9 +302,9 @@
 .card__buy__btn {
   border: 1px solid transparent;
   border-radius: 6px;
-  background: 
-    linear-gradient(to right, #141F25, #141F25), 
-    var(--clr-gradient); 
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   display: flex;
@@ -319,6 +323,8 @@
 
 .container__main__help {
   background-image: url("../imgs/bg-black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 12rem;
   max-height: 12rem;
   display: flex;
@@ -453,6 +459,30 @@
 }
 
 @media (max-width: 768px) {
+
+  .hoodies__upper {
+    display: none;
+  }
+
+  .tshirts__cards,
+  .hoodies__cards {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .selling__card {
+    max-width: 15rem;
+    min-width: 15rem;
+  }
+
+  .footer {
+    margin-top: 5rem;
+  }
+
+  .container__main__help {
+    margin-top: 4rem;
+  }
+
   .hero__title {
     font-size: 4.7rem;
   }
@@ -475,9 +505,9 @@
     display: block;
     border: 1px solid transparent;
     border-radius: 6px;
-    background: 
-      linear-gradient(to right, #141F25, #141F25), 
-      var(--clr-gradient); 
+    background:
+      linear-gradient(to right, #141F25, #141F25),
+      var(--clr-gradient);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     color: var(--clr-white);
@@ -513,6 +543,11 @@
 }
 
 @media (max-width: 640px) {
+
+  .main__help__title__mini {
+    font-size: 1.25rem;
+  }
+
   .military__btn {
     padding: 0.25rem 1.5rem;
     font-size: 1.2rem;
@@ -531,7 +566,7 @@
   }
 
   .main__help__btn {
-    padding: 0.4rem 0.85rem;
-    font-size: 1.25rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 1.1rem;
   }
 }
