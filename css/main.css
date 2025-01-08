@@ -109,7 +109,7 @@
   background-color: transparent;
   font-size: 11.4rem;
   text-transform: uppercase;
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: 4px #fff;
   font-family: sans-serif;
   user-select: none;
 }
@@ -423,6 +423,7 @@
 @media (max-width: 1280px) {
   .hero__title {
     font-size: 7.5rem;
+    -webkit-text-stroke: 3px #fff;
   }
 }
 
