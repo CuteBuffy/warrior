@@ -276,9 +276,11 @@
 
 .card__name {
   color: var(--clr-white);
-  overflow-wrap: break-word;
+  text-wrap: nowrap;
+  overflow: scroll;
   margin-top: 1rem;
   font-size: 1.25rem;
+  overflow: scroll;
 }
 
 .card__buy {
@@ -331,6 +333,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .main__help__title__mini {
@@ -451,9 +454,18 @@
   .footer__right__mini {
     display: flex;
   }
+
+  .tshirts__cards,
+  .hoodies__cards {
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .main__help__wrapper {
+    padding: 0 2rem;
+  }
 
   .hoodies__upper {
     display: none;
@@ -536,9 +548,23 @@
   .hero__desc {
     font-size: 1.35rem;
   }
+
+  .tshirts__cards,
+  .hoodies__cards {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
+
+  .main__help__wrapper {
+    gap: 0;
+  }
+
+  .tshirts__cards,
+  .hoodies__cards {
+    gap: 1rem;
+  }
 
   .main__help__title__mini {
     font-size: 1.25rem;
@@ -564,5 +590,17 @@
   .main__help__btn {
     padding: 0.3rem 0.7rem;
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .hero__title {
+    font-size: 3rem;
   }
 }

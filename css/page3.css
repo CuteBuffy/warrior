@@ -345,7 +345,6 @@
   justify-content: center;
   flex-direction: column;
   min-width: 23rem;
-  max-width: 23rem;
   height: 100%;
   overflow: hidden;
   background-color: var(--clr-blackish);
@@ -366,7 +365,8 @@
 
 .card__name {
   color: var(--clr-white);
-  overflow-wrap: break-word;
+  text-wrap: nowrap;
+  overflow: scroll;
   margin-top: 1rem;
   font-size: 1.25rem;
 }
@@ -470,9 +470,22 @@
   .also__buy__container {
     margin-top: 0;
   }
+
+  .hoodies__cards {
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .selling__card {
+    max-width: 15rem;
+    min-width: 15rem;
+  }
+
+  .card__name {
+    font-size: 1.1rem;
+  }
 
   .container__main {
     margin-top: 4rem;
@@ -555,9 +568,17 @@
   .product__quantity {
     font-size: 1.15rem;
   }
+
+  .hoodies__cards {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
+
+  .hoodies__cards {
+    gap: 1rem;
+  }
 
   .product__cart__text {
     display: none;
