@@ -1,0 +1,524 @@
+.container__header {
+  background-color: var(--clr-blackish);
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navbar__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.navbar__number {
+  color: var(--clr-white);
+  font-weight: 500;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  user-select: none;
+}
+
+.navbar__catalog__mini {
+  display: none;
+}
+
+.navbar__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.navbar__cart__text {
+  color: var(--clr-white);
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 1.65rem;
+  display: flex;
+  align-items: end;
+}
+
+.navbar__catalog__btn {
+  border-image: var(--clr-gradient) 1;
+  border-width: 2px;
+  border-style: solid;
+  color: var(--clr-white);
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.container__hero {
+  background-image: url("../imgs/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__desc {
+  color: var(--clr-white);
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  color: transparent;
+  background-color: transparent;
+  font-size: 11.4rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px #fff;
+  font-family: sans-serif;
+}
+
+.hero__wrapper__military {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1rem;
+}
+
+.dashed__line {
+  width: 24rem;
+  height: 1px;
+  background-image:
+    linear-gradient(to right, #fff 50%, transparent 50%);
+  background-size: 25px 2px;
+}
+
+.military__btn {
+  border-image: var(--clr-gradient) 1;
+  border-width: 2px;
+  border-style: solid;
+  color: var(--clr-white);
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.main__wrapper__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.main__wrapper__card {
+  background-color: var(--clr-greyish);
+  padding: 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 0.5rem 2.5rem -0.75rem #000;
+}
+
+.card__title {
+  background-image: var(--clr-gradient);
+  color: transparent;
+  background-clip: text;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  color: #fff;
+  text-align: center;
+  max-width: 20rem;
+}
+
+.card__dashed__line {
+  width: 100%;
+  height: 1px;
+  background-image:
+    linear-gradient(to right, #D2BD0F 50%, transparent 50%);
+  background-size: 17px 2px;
+  margin-top: 0.5rem;
+}
+
+.container__main {
+  margin-top: 5rem;
+}
+
+.main__wrapper__tshirts,
+.main__wrapper__hoodies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8rem;
+  gap: 3rem;
+}
+
+.tshirts__dashed__line,
+.hoodies__dashed__line {
+  width: 100%;
+  height: 1px;
+  background-image:
+    linear-gradient(to right, #D2BD0F 50%, transparent 50%);
+  background-size: 17px 2px;
+}
+
+.tshirts__upper,
+.hoodies__upper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tshirts__arrows,
+.hoodies__arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tshirts__arrows button,
+.hoodies__arrows button {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.tshirts__arrows button img,
+.hoodies__arrows button img {
+  width: 100%;
+}
+
+.tshirts__upper__text,
+.hoodies__upper__text {
+  background-image: var(--clr-gradient);
+  color: transparent;
+  background-clip: text;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.tshirts__cards,
+.hoodies__cards {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.selling__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 23rem;
+  max-width: 23rem;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--clr-blackish);
+  box-shadow: 0 0.5rem 2.5rem -0.75rem #000;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card__info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.card__name {
+  color: var(--clr-white);
+  overflow-wrap: break-word;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.card__buy {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card__price {
+  color: var(--clr-white);
+  font-size: 1.15rem;
+  height: 100%;
+}
+
+.card__buy__btn {
+  border-image: var(--clr-gradient) 1;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.card__buy__text {
+  display: flex;
+  align-items: end;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.container__main__help {
+  background-image: url("imgs/bg-black.png");
+  min-height: 12rem;
+  max-height: 12rem;
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.main__help__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__help__title__mini {
+  display: none;
+}
+
+.main__help__title {
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.main__help__desc {
+  background-image: var(--clr-gradient);
+  color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main__help__btn {
+  border-image: var(--clr-gradient) 1;
+  border-width: 1px;
+  border-style: solid;
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.footer {
+  background-color: #323D43;
+  max-height: 10rem;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  user-select: none;
+}
+
+.footer__instagram,
+.footer__tg {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.footer__rights {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__left__mini,
+.footer__mid__mini,
+.footer__right__mini {
+  display: none;
+}
+
+@media (max-width: 1536px) {
+  .hero__title {
+    font-size: 9.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero__title {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: 5.65rem;
+  }
+
+  .hero__desc {
+    font-size: 1.5rem;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer__left__mini {
+    gap: 1rem;
+  }
+
+  .footer__left,
+  .footer__mid,
+  .footer__right {
+    display: none;
+  }
+
+  .footer__left__mini,
+  .footer__mid__mini,
+  .footer__right__mini {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 4.7rem;
+  }
+
+  .military__btn {
+    padding: 0.4rem 1.7rem;
+    font-size: 1.3rem;
+  }
+
+  .navbar__number {
+    display: none;
+  }
+
+  .navbar__cart,
+  .navbar__catalog__btn {
+    display: none;
+  }
+
+  .navbar__catalog__mini {
+    display: block;
+    border-image: var(--clr-gradient) 1;
+    border-width: 1px;
+    border-style: solid;
+    color: var(--clr-white);
+    padding: 0.5rem 0.5rem;
+    text-transform: capitalize;
+    user-select: none;
+  }
+
+  .main__help__title {
+    display: none;
+  }
+
+  .main__help__desc {
+    display: none;
+  }
+
+  .main__help__title__mini {
+    color: var(--clr-white);
+    font-weight: 600;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .span {
+    background-image: var(--clr-gradient);
+    color: transparent;
+    background-clip: text;
+  }
+
+  .hero__desc {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .military__btn {
+    padding: 0.25rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hero__desc {
+    font-size: 1rem;
+  }
+
+  .card__title {
+    font-size: 1.35rem;
+  }
+
+  .hero__title {
+    overflow-wrap: anywhere;
+  }
+
+  .main__help__btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 1.25rem;
+  }
+}
