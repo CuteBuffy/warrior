@@ -49,13 +49,6 @@
 
 .navbar__catalog__mini {
   display: none;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background: 
-    linear-gradient(to right, #141F25, #141F25), 
-    var(--clr-gradient); 
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
 }
 
 .navbar__cart {
@@ -312,9 +305,13 @@
 
   .navbar__catalog__mini {
     display: block;
-    border-image: var(--clr-gradient) 1;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: 
+      linear-gradient(to right, #141F25, #141F25), 
+      var(--clr-gradient); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
     color: var(--clr-white);
     padding: 0.5rem 0.5rem;
     text-transform: capitalize;
