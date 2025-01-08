@@ -251,11 +251,6 @@
   padding-bottom: 3rem;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
 .selling__card {
   display: flex;
   justify-content: center;

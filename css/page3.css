@@ -127,7 +127,7 @@
   flex-direction: row;
   align-items: center;
   gap: 1.5rem;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .product__info {
@@ -329,12 +329,13 @@
   font-weight: 500;
   font-size: 1.4rem;
   flex: 1;
+  text-wrap: nowrap;
 }
 
 .hoodies__cards {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
   gap: 4rem;
   padding-bottom: 3rem;
 }
@@ -402,23 +403,10 @@
 }
 
 @media (max-width: 1536px) {
-  .hoodies__dashed__line {
-    flex: 11;
-  }
 
-  .hoodies__upper__text {
-    flex: 2;
-  }
 }
 
 @media (max-width: 1280px) {
-  .hoodies__dashed__line {
-    flex: 13;
-  }
-
-  .hoodies__upper__text {
-    flex: 3;
-  }
 
   .main__title {
     font-size: 1.4rem;
@@ -475,14 +463,6 @@
     margin-top: 4rem;
   }
 
-  .hoodies__dashed__line {
-    flex: 12;
-  }
-
-  .hoodies__upper__text {
-    flex: 4;
-  }
-
   .product__content {
     display: flex;
     flex-direction: column;
@@ -499,12 +479,10 @@
 
 @media (max-width: 768px) {
 
-  .hoodies__dashed__line {
-    flex: 14;
-  }
-
-  .hoodies__upper__text {
-    flex: 6;
+  .hoodies__cards,
+  .hoodies__upper {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .navbar__number {
@@ -592,18 +570,8 @@
   .main__title__mini {
     display: flex;
   }
-
-  .hoodies__dashed__line {
-    flex: 14;
-  }
-
-  .hoodies__upper__text {
-    flex: 10;
-  }
 }
 
 @media (max-width: 470px) {
-  .hoodies__upper__text {
-    text-wrap: nowrap;
-  }
+
 }
