@@ -458,11 +458,6 @@
 }
 
 @media (max-width: 1024px) {
-
-  .container__main {
-    margin-top: 4rem;
-  }
-
   .product__content {
     display: flex;
     flex-direction: column;
@@ -478,6 +473,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .container__main {
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
 
   .hoodies__cards,
   .hoodies__upper {
