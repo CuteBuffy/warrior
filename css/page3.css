@@ -53,6 +53,13 @@
 
 .navbar__catalog__mini {
   display: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: 
+    linear-gradient(to right, #141F25, #141F25), 
+    var(--clr-gradient); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
 
 .navbar__cart {
