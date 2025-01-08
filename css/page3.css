@@ -392,6 +392,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.25rem 0.5rem;
+  user-select: none;
 }
 
 .card__buy__text {

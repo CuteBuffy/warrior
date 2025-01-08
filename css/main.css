@@ -111,6 +111,7 @@
   text-transform: uppercase;
   -webkit-text-stroke: 3px #fff;
   font-family: sans-serif;
+  user-select: none;
 }
 
 .hero__wrapper__military {
@@ -308,6 +309,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.25rem 0.5rem;
+  user-select: none;
 }
 
 .card__buy__text {
@@ -492,7 +494,7 @@
   }
 
   .hero__title {
-    font-size: 4.7rem;
+    font-size: 3.45rem;
   }
 
   .military__btn {
