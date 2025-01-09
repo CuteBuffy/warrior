@@ -84,6 +84,7 @@
   align-items: center;
   justify-content: center;
   transform-origin: top left;
+  position: relative;
 }
 
 .hero__text,
@@ -96,45 +97,6 @@
   display: none;
 }
 
-.hero__center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero__desc {
-  color: var(--clr-white);
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.hero__title {
-  color: transparent;
-  background-color: transparent;
-  font-size: 11.4rem;
-  text-transform: uppercase;
-  -webkit-text-stroke: 4px #fff;
-  font-family: sans-serif;
-  user-select: none;
-}
-
-.hero__wrapper__military {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  gap: 1rem;
-}
-
 .dashed__line {
   width: 24rem;
   height: 1px;
@@ -143,23 +105,15 @@
   background-size: 25px 2px;
 }
 
-.military__btn {
-  border-image: var(--clr-gradient) 1;
-  border-width: 2px;
-  border-style: solid;
-  color: var(--clr-white);
-  padding: 0.5rem 2rem;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  user-select: none;
-}
-
 .main__wrapper__cards {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  position: relative;
+  z-index: 1;
+  margin-top: -10rem;
 }
 
 .main__wrapper__card {
@@ -434,6 +388,11 @@
 }
 
 @media (max-width: 1280px) {
+
+  .main__wrapper__cards {
+    margin-top: -8rem;
+  }
+
   .hero__title {
     font-size: 7.5rem;
     -webkit-text-stroke: 3px #fff;
@@ -441,6 +400,11 @@
 }
 
 @media (max-width: 1024px) {
+
+  .main__wrapper__cards {
+    margin-top: -6rem;
+  }
+
   .hero__title {
     font-size: 5.65rem;
   }
@@ -562,6 +526,10 @@
 
 @media (max-width: 640px) {
 
+  .main__wrapper__cards {
+    margin-top: -6rem;
+  }
+
   .main__help__wrapper {
     gap: 0;
   }
@@ -602,7 +570,18 @@
   }
 }
 
+@media (max-width: 520px) {
+  .main__wrapper__cards {
+    margin-top: -4rem;
+  }
+}
+
 @media (max-width: 450px) {
+
+  .main__wrapper__cards {
+    margin-top: -10rem;
+  }
+
   .hero__container {
     width: 100%;
     height: 80vh;
@@ -620,10 +599,6 @@
   }
 }
 
-@media (max-width: 420px) {
-
-}
-
 @media (max-width: 400px) {
   .hero__title {
     font-size: 3.5rem;
@@ -631,6 +606,11 @@
 }
 
 @media (max-width: 400px ) and (max-height: 700px) {
+
+  .main__wrapper__cards {
+    margin-top: -12rem;
+  }
+
   .hero__container {
     width: 100%;
     height: 90vh;
