@@ -90,7 +90,6 @@
 .hero__text__mini {
   height: 100%;
   width: clamp(90rem);
-  padding: 0 2rem;
 }
 
 .hero__text__mini {
@@ -480,19 +479,8 @@
 
 @media (max-width: 768px) {
 
-  .main__help__wrapper {
-    padding: 0 2rem;
-  }
-
   .hoodies__upper {
     display: none;
-  }
-
-  .tshirts__cards,
-  .hoodies__cards,
-  .tshirts__upper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .selling__card {
