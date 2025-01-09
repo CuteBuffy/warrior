@@ -70,9 +70,9 @@
 .navbar__catalog__btn {
   border: 1px solid transparent;
   border-radius: 6px;
-  background: 
-    linear-gradient(to right, #141F25, #141F25), 
-    var(--clr-gradient); 
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   color: var(--clr-white);
@@ -80,6 +80,124 @@
   font-size: 1.2rem;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.container__contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__form__container {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  width: 45rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.contact__form__wrapper {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact__form__upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__form__title {
+  background-image: var(--clr-gradient);
+  color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+}
+
+.contact__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 90%);
+  color: rgba(255, 255, 255, 60%);
+  font-size: 1.15rem;
+  padding: 0.35rem 0;
+}
+
+.contact__input:focus {
+  outline: none;
+}
+
+.contact__input::placeholder {
+  color: rgba(255, 255, 255, 60%);
+}
+
+.contact__inputs__mid,
+.contact__inputs__footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.contact__inputs__mid input,
+.contact__inputs__footer input {
+  width: 100%;
+}
+
+.contact__phonenumber {
+  flex: 6;
+}
+
+.contact__branch__number {
+  flex: 3;
+}
+
+.contact__mail {
+  flex: 4;
+}
+
+.contact__city {
+  flex: 5;
+}
+
+.contact__city__mini,
+.contact__mail__mini,
+.contact__branch__number__mini {
+  display: none;
+}
+
+.contact__send__btn {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--clr-white);
+  margin-top: 1rem;
 }
 
 .container__wrapper {
@@ -246,9 +364,9 @@
 .checkout__order__btn {
   border: 1px solid transparent;
   border-radius: 6px;
-  background: 
-    linear-gradient(to right, #141F25, #141F25), 
-    var(--clr-gradient); 
+  background:
+    linear-gradient(to right, #141F25, #141F25),
+    var(--clr-gradient);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   display: flex;
@@ -294,6 +412,48 @@
 }
 
 @media (max-width: 768px) {
+
+  .contact__form__wrapper {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact__form__title {
+    font-size: 1.5rem;
+  }
+
+  .contact__send__btn {
+    font-size: 1rem;
+  }
+
+  .contact__input {
+    font-size: 1rem;
+  }
+
+  .contact__input::placeholder {
+    font-size: 1rem;
+  }
+
+  .contact__form__container {
+    width: 30rem;
+  }
+
+  .contact__inputs__mid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__city,
+  .contact__mail,
+  .contact__branch__number {
+    display: none;
+  }
+
+  .contact__city__mini,
+  .contact__mail__mini,
+  .contact__branch__number__mini {
+    display: flex;
+  }
+
   .navbar__number {
     display: none;
   }
@@ -307,9 +467,9 @@
     display: block;
     border: 1px solid transparent;
     border-radius: 6px;
-    background: 
-      linear-gradient(to right, #141F25, #141F25), 
-      var(--clr-gradient); 
+    background:
+      linear-gradient(to right, #141F25, #141F25),
+      var(--clr-gradient);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     color: var(--clr-white);
@@ -320,6 +480,23 @@
 }
 
 @media (max-width: 640px) {
+
+  .contact__form__title {
+    font-size: 1.3rem;
+  }
+
+  .contact__send__btn {
+    font-size: 0.9rem;
+  }
+
+  .contact__input {
+    font-size: 0.9rem;
+  }
+
+  .contact__input::placeholder {
+    font-size: 0.9rem;
+  }
+
   .card__name {
     font-size: 1.25rem;
   }
